@@ -15,6 +15,7 @@ import type {
   FunctionReference,
 } from "convex/server";
 import type * as conectar from "../conectar.js";
+import type * as gerador from "../gerador.js";
 
 /**
  * A utility for referencing Convex functions in your app's API.
@@ -26,6 +27,7 @@ import type * as conectar from "../conectar.js";
  */
 declare const fullApi: ApiFromModules<{
   conectar: typeof conectar;
+  gerador: typeof gerador;
 }>;
 export declare const api: FilterApi<
   typeof fullApi,

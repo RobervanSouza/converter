@@ -40,3 +40,7 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 run com convex = npx convex dev
 run com next = npm run dev
 
+npm install replicate
+npm i react-sketch-canvas
+ npm install react-hook-form
+ 
