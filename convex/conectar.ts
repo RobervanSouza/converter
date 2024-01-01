@@ -26,9 +26,7 @@ export const saveConvex = mutation(
       prompt,
       image,
     });
-    return {
-      message: "success",
-    };
+    return resultId
   }
 );
 
@@ -46,13 +44,14 @@ export const editar = internalMutation(
 );
 
 export const getSketch = query(
-  ({ db }, { sketchId }: { sketchId: Id<"conectar"> }) => {
+  ({ db }, { sketchId }: { sketchId: Id<"sketches"> }) => {
     if (!sketchId) return null;
     return db.get(sketchId);
   }
 );
+
+
 export const getConvex = query(async ({ db }) => {
   const result = await db.query("conectar").collect();
-
   return result;
 });
