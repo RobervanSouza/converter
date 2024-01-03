@@ -44,3 +44,6 @@ npm install replicate
 npm i react-sketch-canvas
  npm install react-hook-form
  https://dashboard.convex.dev/t/robervansouza/converter/veracious-dolphin-72/data?table=conectar
+
+npx shadcn-ui@latest init
+
